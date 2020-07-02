@@ -14,6 +14,8 @@
         <a href="<?php  echo $_GET['url1'];  ?>">URL</a>
 
         <hr><textarea rows="10" cols="100">javascript:alert(1)</textarea>
+        <hr>
+        Требуется клик по URL
 
 </body>
 </html>
