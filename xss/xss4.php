@@ -11,7 +11,7 @@
             <input type="submit">
         </form><br>
 
-        <hr><textarea>XSS: "><script>alert(1)</script></textarea>
+        <hr><textarea rows="250">XSS: "><script>alert(1)</script></textarea>
 
 </body>
 </html>
