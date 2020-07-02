@@ -17,5 +17,10 @@
 
 <a href='xss/xss5.php'>XSS 5  (FORM POST TAG SCRIPT)</a><br>
 
+<a href='xss/xss6.php'>XSS 6  (FORM POST TAG STYLE)</a><br>
+
+<a href='xss/xss7.php'>XSS 7  (FORM POST TAG NOSCRIPT)</a><br>
+
+<a href='xss/xss8.php'>XSS 8  (FORM POST TAG TEXTAREA)</a><br>
 </body>
 </html>
