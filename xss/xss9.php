@@ -17,7 +17,7 @@
             <input type="submit">
         </form><br>
 
-        <hr><textarea rows="10" cols="100">'><script>alert(1)</script></textarea>
+        <hr><textarea rows="10" cols="100">' autofocus onfocus='alert(1);'</textarea>
 
 </body>
 </html>
