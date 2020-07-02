@@ -13,7 +13,7 @@
 
 <a href='xss/xss3.php'>XSS 3 (FORM POST)</a><br>
 
-<a href='xss/xss4.php'>XSS  (FORM GET)</a><br>
+<a href='xss/xss4.php'>XSS 4  (FORM GET)</a><br>
 
 </body>
 </html>
