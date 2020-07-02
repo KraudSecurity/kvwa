@@ -15,7 +15,7 @@
 
 <a href='xss/xss4.php'>XSS 4  (FORM GET)</a><br>
 
-<a href='xss/xss4.php'>XSS 5  (FORM POST TAG SCRIPT)</a><br>
+<a href='xss/xss5.php'>XSS 5  (FORM POST TAG SCRIPT)</a><br>
 
 </body>
 </html>
