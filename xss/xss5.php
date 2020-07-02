@@ -15,7 +15,7 @@
             var name = "<?php  echo $_POST['type'];  ?>";
         </script>
 
-        <hr><textarea> rows="10" cols="100">"</script><script>alert(1)</script></textarea>
+        <hr><textarea rows="10" cols="100">"</script><script>alert(1)</script></textarea>
 
 </body>
 </html>
