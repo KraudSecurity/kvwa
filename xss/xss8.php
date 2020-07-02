@@ -15,7 +15,7 @@
             <?php  echo $_POST['type']; ?>
         </textarea>
 
-        <hr><plaintext><\/textarea><script>alert(1)</script></plaintext>
+        <hr><plaintext></textarea><script>alert(1)</script></plaintext>
 
 </body>
 </html>
