@@ -3,7 +3,7 @@
     <title>Kraud Vulnerable Web Applications | XSS 4 </title>
 </head>
 <body>
-
+<a href="/kvwa/">Home</a><br>
 <h1>XSS 4<h1>
 
         <form action="" method="GET">
