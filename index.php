@@ -22,5 +22,8 @@
 <a href='xss/xss7.php'>XSS 7  (FORM POST TAG NOSCRIPT)</a><br>
 
 <a href='xss/xss8.php'>XSS 8  (FORM POST TAG TEXTAREA)</a><br>
+
+<a href='xss/xss9.php'>XSS 9  (FORM POST REPLACE > )</a><br>
+
 </body>
 </html>
