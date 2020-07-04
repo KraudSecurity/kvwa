@@ -7,7 +7,7 @@
 <h1>XSS 12<h1>
         <?php
         $url = $_GET['from'];
-        if (!preg_match('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i', $url)) {
+        if(!preg_match( '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i' ,$url)){
             $url = "http://localhost";
         }
         ?>
