@@ -27,7 +27,10 @@
 
 <a href='xss/xss10.php'>XSS 10  (FORM GET TAG A)</a><br>
 
-<a href='xss/xss11.php?from=https://yandex.ru/404/'>XSS 11  (TAG A Filter ^javascript)</a><br>
+<a href='xss/xss11.php?from=https://yandex.ru/404/'>XSS 11  (TAG A Filter ^javascript )</a><br>
+
+<a href='xss/xss12.php?from=https://yandex.ru/404/'>XSS 12  (TAG A Filter proto://host/string )</a><br>
+
 
 </body>
 </html>
