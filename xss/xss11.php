@@ -13,7 +13,7 @@
         ?>
         <a href="<?php  echo $url;  ?>">Back</a>
 
-        <hr><textarea rows="10" cols="100"><script>alert(1)</script></textarea>
+        <hr><textarea rows="10" cols="100">%20javascript:alert(1)</textarea>
 
 </body>
 </html>
