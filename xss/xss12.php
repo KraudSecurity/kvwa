@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>Kraud Vulnerable Web Applications | XSS 11</title>
+<title>Kraud Vulnerable Web Applications | XSS 12</title>
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
-<h1>XSS 11<h1>
+<h1>XSS 12<h1>
         <?php
         $url = $_GET['from'];
         if (preg_match('/^[a-zA-Z]:\/\/[a-zA-Z-0-9]\//',$url, $matches)) {
