@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1>XSS</h1>
+<h1>XSS Clear</h1>
 
 <a href="xss/xss1.php?phone=1234567890">XSS 1 (BODY)</a><br>
 
@@ -23,13 +23,15 @@
 
 <a href='xss/xss8.php'>XSS 8  (FORM POST TAG TEXTAREA)</a><br>
 
-<a href='xss/xss9.php'>XSS 9  (FORM POST Filter > )</a><br>
+<a href='xss/xss9.php'>XSS 9  (FORM GET TAG A)</a><br>
 
-<a href='xss/xss10.php'>XSS 10  (FORM GET TAG A)</a><br>
+<h1>XSS Filter</h1>
 
 <a href='xss/xss11.php?from=https://yandex.ru/404/'>XSS 11  (TAG A Filter ^javascript )</a><br>
 
 <a href='xss/xss12.php?from=https://yandex.ru/404/'>XSS 12  (TAG A Filter proto://host/string )</a><br>
+
+<a href='xss/xss13.php'>XSS 13  (FORM POST Filter > )</a><br>
 
 
 </body>
