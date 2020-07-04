@@ -14,6 +14,7 @@
         <a href="<?php  echo $url;  ?>">Back</a>
 
         <hr><textarea rows="10" cols="100">%20javascript:alert(1)</textarea>
-
+        <hr>
+        Требуется клик по Back
 </body>
 </html>
