@@ -33,5 +33,7 @@
 
 <a href='xss/xss13.php'>XSS 13  (FORM POST Filter > )</a><br>
 
+<a href='xss/xss14.php?from=https://yandex.ru/404/'>XSS 14  (TAG A Filter javascript )</a><br>
+
 </body>
 </html>
