@@ -7,7 +7,7 @@
 <h1>XSS 11<h1>
         <?php
         $url = $_GET['from'];
-        if (preg_match('^javascript',$url)) {
+        if (preg_match('/^javascript/',$url, $matches)) {
             $url = "http://localhost";
         }
         ?>
