@@ -6,9 +6,8 @@
 <a href="/kvwa/">Home</a><br>
 <h1>XSS 14<h1>
         <?php
-        $search = array ("'", '"');
         $url = $_GET['from'];
-        $url = preg_replace($search, '', $url);
+
         if (preg_match('/javascript/',$url, $matches)) {
             $url = "http://localhost";
         }
