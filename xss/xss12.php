@@ -13,7 +13,7 @@
         ?>
         <a href="<?php  echo $url;  ?>">Back</a>
 
-        <hr><textarea rows="10" cols="100">javascript://host.com/%0aalert(1)</textarea>
+        <hr><textarea rows="10" cols="100">javascript://host.com/%250aalert(1)</textarea>
         <hr>
         Требуется клик по Back
 
