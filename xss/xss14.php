@@ -8,7 +8,7 @@
         <?php
         $url = $_GET['from'];
 
-        if (preg_match('/javascript/',$url, $matches)) {
+        if (preg_match('/javascript/i',$url, $matches)) {
             $url = "http://localhost";
         }
         ?>
