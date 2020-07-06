@@ -38,6 +38,7 @@
 
 <a href='xss/xss14.php?from=https://yandex.ru/404/'>XSS 14  (TAG A Filter javascript )</a><br>
 
+
 <h1>XSS Invulnerable</h1>
 
 <a href='xss/xss100.php'>XSS 100</a><br>
