@@ -27,6 +27,8 @@
 
 <a href='xss/xss10.php'>XSS 10  (USER-AGENT)</a><br>
 
+<a href='xss/xss16.php'>XSS 16  (COOKIES)</a><br>
+
 
 <h1>XSS Filter</h1>
 
