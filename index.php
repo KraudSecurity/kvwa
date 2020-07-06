@@ -45,7 +45,7 @@
 
 <a href='xss/xss100.php'>XSS 100</a><br>
 
-<a href='xss/xss101.php'>XSS 101</a><br>
+<a href='xss/xss101.php?input=1234567890'>XSS 101</a><br>
 
 <a href='xss/xss102.php'>XSS 102</a><br>
 

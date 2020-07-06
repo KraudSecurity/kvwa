@@ -6,15 +6,12 @@
 <a href="/kvwa/">Home</a><br>
 <h1>XSS 101<h1>
 
-        <a href="xss101.php?input=1234567890">Link</a> <br>
-
 <?php
 
 $input = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_URL);
-print($input);
+echo '<a href="xss101.php?input="' . $input . '">Link</a>';
 
 ?>
-
 
 </body>
 </html>
