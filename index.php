@@ -25,6 +25,9 @@
 
 <a href='xss/xss9.php'>XSS 9  (FORM GET TAG A)</a><br>
 
+<a href='xss/xss10.php'>XSS 10  (USER-AGENT)</a><br>
+
+
 <h1>XSS Filter</h1>
 
 <a href='xss/xss11.php?from=https://yandex.ru/404/'>XSS 11  (TAG A Filter ^javascript )</a><br>
