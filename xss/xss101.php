@@ -9,7 +9,7 @@
 <?php
 
 $input = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_URL);
-echo '<a href="xss101.php?input="' . $input . '">Link</a>';
+echo '<a href="xss101.php?input=' . $input . '">Link</a>';
 
 ?>
 
