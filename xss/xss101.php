@@ -11,7 +11,7 @@
 <?php
 
 $input = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_URL);
-echo '<a href="http://example.com/page?input="' . $input . '">Link</a>';
+print($input);
 
 ?>
 
