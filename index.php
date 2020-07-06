@@ -38,6 +38,8 @@
 
 <a href='xss/xss14.php?from=https://yandex.ru/404/'>XSS 14  (TAG A Filter javascript )</a><br>
 
+<a href='xss/xss15.php'>XSS 15  (FORM POST Filter script tags )</a><br>
+
 
 <h1>XSS Invulnerable</h1>
 
