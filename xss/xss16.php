@@ -14,14 +14,14 @@ if (!isset($username)) {
 <h1>XSS 16<h1>
 
         <?php
-
+        $username = $_COOKIE['username'];
         if (isset($username)) {
             print($username);
         }
 
         ?>
 
-        <hr><textarea rows="10" cols="100">--><script>alert(1)</script><\!--</textarea>
+        <hr><textarea rows="10" cols="100">  </textarea>
         <hr>
         Следует установить Cookies username
 
