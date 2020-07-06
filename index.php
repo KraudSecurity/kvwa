@@ -49,5 +49,9 @@
 
 <a href='xss/xss102.php'>XSS 102</a><br>
 
+<a href='xss/xss103.php'>XSS 103</a><br>
+
+<a href='xss/xss104.php'>XSS 104</a><br>
+
 </body>
 </html>
