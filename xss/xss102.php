@@ -6,7 +6,7 @@
 <a href="/kvwa/">Home</a><br>
 <h1>XSS 102<h1>
 
-        <a href="xss100.php?input=1234567890">Link</a> <br>
+        <a href="xss102.php?input=1234567890">Link</a> <br>
 
 <?php
 /* Prevent XSS input */
