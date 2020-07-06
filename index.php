@@ -42,5 +42,7 @@
 
 <a href='xss/xss100.php'>XSS 100</a><br>
 
+<a href='xss/xss101.php'>XSS 101</a><br>
+
 </body>
 </html>
