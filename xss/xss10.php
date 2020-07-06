@@ -9,11 +9,7 @@
 
         <hr><textarea rows="10" cols="100">--><script>alert(1)</script><\!--</textarea>
         <hr>
-        Следует установить USer-Agent в браузере
-        <!--
-
-        User-Agent: <?php  echo $_SERVER['HTTP_USER_AGENT'];  ?>
-
-        -->
+        Следует установить User-Agent в браузере
+        <!-- User-Agent: <?php  echo $_SERVER['HTTP_USER_AGENT'];  ?> -->
 </body>
 </html>
