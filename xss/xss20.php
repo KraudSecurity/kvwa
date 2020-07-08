@@ -10,9 +10,11 @@
         echo "<a href=\"" . $_SERVER["HTTP_REFERER"] . "\">Back</a>";
         ?>
 
-        <hr><textarea rows="10" cols="100">?--><script>alert(1)</script></textarea>
+        <hr><textarea rows="10" cols="100">javascript:alert(1)</textarea>
         <hr>
         Требуется клик по Back
+        <br>
+        Следует установить Referer в браузере
 
 </body>
 </html>
