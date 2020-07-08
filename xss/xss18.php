@@ -10,6 +10,12 @@
         <hr><textarea rows="10" cols="100">--><script>alert(1)</script><\!--</textarea>
         <hr>
         Следует установить X-Forwarded-For в браузере
-        <!-- X-Forwarded-For: <?php  echo $_SERVER['X-Forwarded-For'];  ?> -->
+        <!-- X-Forwarded-For: <?php echo $_SERVER['X-Forwarded-For'];  ?> -->
 </body>
 </html>
+
+<?php
+
+echo var_dump(get_defined_vars());
+
+?>
