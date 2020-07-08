@@ -33,6 +33,8 @@
 
 <a href='xss/xss20.php'>XSS 20  (HTTP_REFERER)</a><br>
 
+<a href='xss/xss20.php'>XSS 21  (UPLOAD FILE)</a><br>
+
 <a href='xss/xss16.php'>XSS 16  (COOKIES)</a><br>
 
 
