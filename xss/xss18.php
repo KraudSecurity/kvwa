@@ -11,11 +11,12 @@
         <hr>
         Следует установить X-Forwarded-For в браузере
         <!-- X-Forwarded-For: <?php echo $_SERVER['X-Forwarded-For'];  ?> -->
+        <!-- X-Forwarded-For: <?php echo $_SERVER['HTTP_X_FORWARDED_FOR'];  ?> -->
 </body>
 </html>
 
 <?php
 
-echo var_dump(get_defined_vars());
+//echo var_dump(get_defined_vars());
 
 ?>
