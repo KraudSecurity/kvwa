@@ -29,6 +29,8 @@
 
 <a href='xss/xss18.php'>XSS 18  (X-Forwarded-For)</a><br>
 
+<a href='xss/xss19.php'>XSS 19  (REQUEST_URI)</a><br>
+
 <a href='xss/xss16.php'>XSS 16  (COOKIES)</a><br>
 
 
