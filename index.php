@@ -5,6 +5,9 @@
 </head>
 <body>
 
+<a href="index.php">Home</a><br>
+<a href="link1.php">Links HTML</a><br>
+
 <h1>XSS Clear</h1>
 
 <a href="xss/xss1.php?phone=1234567890">XSS 1 (BODY)</a><br>
@@ -62,6 +65,15 @@
 <a href='xss/xss103.php'>XSS 103</a><br>
 
 <a href='xss/xss104.php'>XSS 104</a><br>
+
+
+<h1>Links</h1>
+
+<script type="text/javascript">
+    function GoUrl(url){
+        location.href=url;
+    }
+</script>
 
 </body>
 </html>
