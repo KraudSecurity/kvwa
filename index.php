@@ -67,13 +67,6 @@
 <a href='xss/xss104.php'>XSS 104</a><br>
 
 
-<h1>Links</h1>
-
-<script type="text/javascript">
-    function GoUrl(url){
-        location.href=url;
-    }
-</script>
 
 </body>
 </html>

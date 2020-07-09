@@ -39,17 +39,17 @@
 
 <button type="button"><a href="links/link12.php">Link12</a></button><br>
 
-<button onclick='window.location.replace("links/link13.php")'>Link13</button>
+<button onclick='window.location.replace("links/link13.php")'>Link13</button><br>
 
-<button onclick='window.location.href = "links/link14.php"'>Link14</button>
+<button onclick='window.location.href = "links/link14.php"'>Link14</button><br>
 
-<button onclick='window.location = "links/link15.php"'>Link15</button>
+<button onclick='window.location = "links/link15.php"'>Link15</button><br>
 
-<button onclick='window.open("links/link16.php","_self","","")'>Link16</button>
+<button onclick='window.open("links/link16.php","_self","","")'>Link16</button><br>
 
-<button onclick='window.location.assign("links/link17.php")'>Link17</button>
+<button onclick='window.location.assign("links/link17.php")'>Link17</button><br>
 
-<input type="submit" name="submit" onClick="window.location= 'links/link18.php'">
+<input type="submit" name="submit" onClick="window.location= 'links/link18.php'"><br>
 
 </body>
 </html>
