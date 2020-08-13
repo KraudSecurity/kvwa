@@ -14,7 +14,7 @@
 
     echo "<table border='1' cellspacing='5' cellpadding='10'><tr><td>#</td><td>MSG</td></tr>";
     while ($row = $res->fetchArray()) {
-        echo "<tr><td>".$row['id']."</td><td>".$row['msg']."</td></tr>";
+        echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td></tr>";
     }
     echo "</table>";
 
