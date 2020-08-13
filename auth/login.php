@@ -21,7 +21,7 @@
             $stmt = $db->prepare('SELECT * FROM users WHERE username = ? and password = ?');
 
             $stmt->execute(array($username, $password));
-
+            var_dump($stmt);
             if ($stmt->rowCount()) {
                 $_SESSION["authenticated"] = true;
             } else {
