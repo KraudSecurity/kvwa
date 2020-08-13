@@ -34,6 +34,7 @@
 
         if(isset($_SESSION["authenticated"])) {
             echo "<h3>Admin</h3>";
+            echo "<a href='logout.php'>Logout</a>";
         } else {
             ?>
             <form action="" method="POST">
