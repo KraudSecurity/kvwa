@@ -18,7 +18,7 @@
         if(isset($username)) {
             $db = new PDO('sqlite:auth.db');
 
-            $stmt = $db->prepare('SELECT * FROM users WHERE username = ? and password = ?');
+            $stmt = $db->prepare("SELECT * FROM users WHERE username = ? and password = ?");
 
             $stmt->execute(array($username, $password));
             var_dump($stmt);
