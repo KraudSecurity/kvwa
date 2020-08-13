@@ -11,10 +11,11 @@
 if($_POST["msg"] != '') {
     $db = new SQLite3('sxss.db');
     //$db->exec("CREATE TABLE comments(id INTEGER PRIMARY KEY, msg TEXT)");
-    $sql ="INSERT INTO comments(id, msg) VALUES(NULL, ".$_POST['msg'].")";
+    $sql ="INSERT INTO comments(msg) VALUES(".$_POST['msg'].")";
     //print($sql);
     $db->exec($sql);
-    echo "Successfully<br>";
+    $last_row_id = $db->lastInsertRowID();
+    echo "Successfully $last_row_id<br>";
 }
 ?>
 
