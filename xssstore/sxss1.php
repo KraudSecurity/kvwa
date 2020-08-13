@@ -21,7 +21,7 @@ if($_POST["msg"] != '') {
 
     $db = new MyDB();
 
-    $sql ="INSERT INTO comments(msg) VALUES(".$_POST['msg'].")";
+    $sql ="INSERT INTO comments(msg) VALUES('".$_POST['msg']."')";
     //print($sql);
     $db->exec($sql);
     $last_row_id = $db->lastInsertRowID();
