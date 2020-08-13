@@ -23,7 +23,8 @@
             $stmt->bindParam(2, $password);
             $result = $stmt->execute();
 
-            var_dump($result[0]['id']);
+            $user = $result->fetchArray();
+            var_dump($user[0]);
 
             if ($stmt->rowCount()) {
                 $_SESSION["authenticated"] = true;
