@@ -21,6 +21,7 @@
             $stmt = $db->prepare("SELECT * FROM users WHERE username = ? and password = ?");
             $stmt->bindParam(1, $username);
             $stmt->bindParam(2, $password);
+            $stmt->execute();
 
             var_dump($stmt);
             if ($stmt->rowCount()) {
