@@ -11,7 +11,9 @@
 if($_POST["msg"] != '') {
     $db = new SQLite3('sxss.db');
     //$db->exec("CREATE TABLE comments(id INTEGER PRIMARY KEY, msg TEXT)");
-    $db->exec("INSERT INTO comments(id, msg) VALUES('', ".$_POST['msg'].")");
+    $sql ="INSERT INTO comments(id, msg) VALUES(NULL, ".$_POST['msg'].")";
+    print($sql);
+    $db->exec($sql);
     echo "Successfully<br>";
 }
 ?>
