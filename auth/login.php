@@ -38,11 +38,15 @@
             echo "<a href='logout.php'>Logout</a>";
         } else {
             ?>
+        <table align='center' width='70%'>
+            <tr><td>
             <form action="" method="POST">
                 <input name="username"><br>
                 <input name="password"><br>
                 <input type="submit">
-            </form><br>
+            </form>
+                </td></tr>
+        </table>
             <br>
             <table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'>
                 <tr><td><b>Login</b></td><td><b>Password</b></td></tr>
