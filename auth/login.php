@@ -21,7 +21,7 @@
 
         $stmt->execute(array($username, $password));
 
-        if($username != '') {
+        if(isset($username)) {
             if ($stmt->rowCount()) {
                 $_SESSION["authenticated"] = true;
             } else {
