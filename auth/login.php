@@ -39,8 +39,8 @@
         } else {
             ?>
         <table align='center' border="1">
-            <tr><td>LOGIN FORM</td></tr>
-            <tr><td>
+            <tr><td align="center">LOGIN</td></tr>
+            <tr><td align="center">
             <form action="" method="POST">
                 <input name="username"><br>
                 <input name="password"><br>
