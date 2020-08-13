@@ -33,8 +33,7 @@
         }
 
         if(isset($_SESSION["authenticated"])) {
-            echo "<h3>Admin panel</h3>";
-            echo "<h2>".$user['username']."</h2>";
+            echo "<h3>Admin panel [".$user['username']."] </h3>";
             echo "<a href='logout.php'>Logout</a>";
         } else {
             ?>
