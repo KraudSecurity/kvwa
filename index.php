@@ -55,6 +55,10 @@
 
 <a href='xss/xss17.php?input=1234567890'>XSS 101</a><br>
 
+<h1>XSS Store</h1>
+
+<a href='xssstore/sxss1.php'>SXSS 1</a><br>
+
 
 <h1>XSS Invulnerable</h1>
 
