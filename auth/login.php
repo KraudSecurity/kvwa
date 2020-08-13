@@ -38,7 +38,7 @@
             echo "<a href='logout.php'>Logout</a>";
         } else {
             ?>
-        <table align='center' width='70%'>
+        <table align='center'>
             <tr><td>
             <form action="" method="POST">
                 <input name="username"><br>
