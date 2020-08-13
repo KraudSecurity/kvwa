@@ -16,6 +16,8 @@ if($_POST["msg"] != '') {
     $db->exec($sql);
     $last_row_id = $db->lastInsertRowID();
     echo "Successfully $last_row_id<br>";
+    $db->close();
+    unset($db);
 }
 ?>
 
