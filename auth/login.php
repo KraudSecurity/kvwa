@@ -19,8 +19,9 @@
             $db = new PDO('sqlite:auth.db');
 
             $stmt = $db->prepare("SELECT * FROM users WHERE username = ? and password = ?");
+            $stmt->bindParam(1, $username);
+            $stmt->bindParam(2, $password);
 
-            $stmt->execute(array($username, $password));
             var_dump($stmt);
             if ($stmt->rowCount()) {
                 $_SESSION["authenticated"] = true;
