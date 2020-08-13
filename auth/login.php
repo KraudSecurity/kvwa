@@ -15,7 +15,7 @@
         $username = isset($_POST['username'])? $_POST['username'] : '';
         $password = isset($_POST['password'])? $_POST['password'] : '';
 
-        $db = new SQLite3('auth.db');
+        $db = new PDO('sqlite:auth.db');
 
         $stmt = $db->prepare('SELECT * FROM users WHERE username = ? and password = ?');
 
