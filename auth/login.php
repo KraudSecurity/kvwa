@@ -9,19 +9,19 @@
         <?php
         session_start();
 
-        //error_reporting(-1);
-        //ini_set('display_errors', 'On');
+        error_reporting(7);
+        ini_set('display_errors', 'On');
 
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $db = new PDO('sqlite:auth.db');
-
-        $stmt = $db->prepare('SELECT * FROM users WHERE username = ? and password = ?');
-
-        $stmt->execute(array($username, $password));
-
         if(isset($username)) {
+            $db = new PDO('sqlite:auth.db');
+
+            $stmt = $db->prepare('SELECT * FROM users WHERE username = ? and password = ?');
+
+            $stmt->execute(array($username, $password));
+
             if ($stmt->rowCount()) {
                 $_SESSION["authenticated"] = true;
             } else {
