@@ -27,13 +27,14 @@
             //var_dump($user);
             if ($user[0] > 0) {
                 $_SESSION["authenticated"] = true;
+                $_SESSION["username"] = $user['username'];
             } else {
                 echo "<h3>Login Failed</h3>";
             }
         }
 
         if(isset($_SESSION["authenticated"])) {
-            echo "<h3>Admin panel [".$user['username']."] </h3>";
+            echo "<h3>Admin panel [".$_SESSION["username"]."] </h3>";
             echo "<a href='logout.php'>Logout</a>";
         } else {
             ?>
