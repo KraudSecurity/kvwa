@@ -4,7 +4,7 @@
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
-<h1>XSS 4<h1>
+<h1>SXSS 1<h1>
 
 <?php
 
