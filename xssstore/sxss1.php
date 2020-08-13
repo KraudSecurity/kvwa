@@ -10,7 +10,7 @@
 
 if(isset($_POST["submit"])) {
     $db = new SQLite3('sxss.db');
-    $db->exec("CREATE TABLE comments(id INTEGER PRIMARY KEY, msg TEXT)");
+    //$db->exec("CREATE TABLE comments(id INTEGER PRIMARY KEY, msg TEXT)");
     $db->exec("INSERT INTO comments(msg) VALUES(".$_POST['msg'].")");
     echo "Successfully<br>";
 }
