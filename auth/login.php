@@ -29,7 +29,7 @@
                 $_SESSION["authenticated"] = true;
                 $_SESSION["username"] = $user['username'];
             } else {
-                echo "<h3>Login Failed</h3>";
+                echo "<h3 align='center'>Login Failed</h3>";
             }
         }
 
