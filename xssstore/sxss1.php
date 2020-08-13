@@ -7,10 +7,20 @@
 <h1>SXSS 1<h1>
 
 <?php
+error_reporting(7);
 
 if($_POST["msg"] != '') {
-    $db = new SQLite3('sxss.db');
-    //$db->exec("CREATE TABLE comments(id INTEGER PRIMARY KEY, msg TEXT)");
+
+    class MyDB extends SQLite3
+    {
+        function __construct()
+        {
+            $this->open('sxss.db');
+        }
+    }
+
+    $db = new MyDB();
+
     $sql ="INSERT INTO comments(msg) VALUES(".$_POST['msg'].")";
     //print($sql);
     $db->exec($sql);
