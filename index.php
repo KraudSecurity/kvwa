@@ -57,8 +57,8 @@
 
 <h1>XSS Store</h1>
 
-<a href='xssstore/sxss1.php'>SXSS 1</a> <br>
-<a href='xssstore/sxss1_msg.php'>SXSS 1 MSG</a> <br>
+<a href='xssstored/sxss1.php'>SXSS 1</a> <br>
+<a href='xssstored/sxss1_msg.php'>SXSS 1 MSG</a> <br>
 
 
 <h1>XSS Invulnerable</h1>
