@@ -24,7 +24,7 @@
             $result = $stmt->execute();
 
             $user = $result->fetchArray();
-            var_dump($user);
+            //var_dump($user);
             if ($user[0] > 0) {
                 $_SESSION["authenticated"] = true;
             } else {
@@ -34,6 +34,7 @@
 
         if(isset($_SESSION["authenticated"])) {
             echo "<h3>Admin panel</h3>";
+            echo "<h2>".$user['username']."</h2>";
             echo "<a href='logout.php'>Logout</a>";
         } else {
             ?>
