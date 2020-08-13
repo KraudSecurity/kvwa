@@ -31,11 +31,9 @@
         ?>
 
 
-        <hr><textarea rows="10" cols="100">javascript:alert(1)</textarea>
+        <hr><textarea rows="10" cols="100"></textarea>
         <hr>
-        Требуется клик по Back
         <br>
-        Следует установить Referer в браузере
 
 </body>
 </html>
