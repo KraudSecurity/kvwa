@@ -21,10 +21,12 @@
 
         $stmt->execute(array($username, $password));
 
-        if($stmt->rowCount()){
-            $_SESSION["authenticated"] = true;
-        } else {
-            echo "<h3>Login Failed</h3>";
+        if($_POST["username"] != '') {
+            if ($stmt->rowCount()) {
+                $_SESSION["authenticated"] = true;
+            } else {
+                echo "<h3>Login Failed</h3>";
+            }
         }
 
         if(isset($_SESSION["authenticated"])) {
