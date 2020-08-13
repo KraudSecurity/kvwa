@@ -12,8 +12,8 @@
         //error_reporting(-1);
         //ini_set('display_errors', 'On');
 
-        $username = isset($_POST['username'])? $_POST['username'] : '';
-        $password = isset($_POST['password'])? $_POST['password'] : '';
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
         $db = new PDO('sqlite:auth.db');
 
