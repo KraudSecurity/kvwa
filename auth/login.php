@@ -42,17 +42,18 @@
                 <input name="password"><br>
                 <input type="submit">
             </form><br>
+            <br>
+            <table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'>
+                <tr><td><b>Login</b></td><td><b>Password</b></td></tr>
+                <tr><td>admin</td><td>1234567890</td></tr>
+                <tr><td>user</td><td>???</td></tr>
+                <tr><td>operator</td><td>???</td></tr>
+            </table>
         <?php
         }
         ?>
 
-        <br>
-        <table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'>
-            <tr><td><b>Login</b></td><td><b>Password</b></td></tr>
-            <tr><td>admin</td><td>1234567890</td></tr>
-            <tr><td>user</td><td>???</td></tr>
-            <tr><td>operator</td><td>???</td></tr>
-        </table>
+
 
 </body>
 </html>
