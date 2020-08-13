@@ -8,7 +8,7 @@
 
 <?php
 
-if(isset($_POST["submit"])) {
+if(isset($_POST["msg"])) {
     $db = new SQLite3('sxss.db');
     //$db->exec("CREATE TABLE comments(id INTEGER PRIMARY KEY, msg TEXT)");
     $db->exec("INSERT INTO comments(msg) VALUES(".$_POST['msg'].")");
@@ -16,7 +16,7 @@ if(isset($_POST["submit"])) {
 }
 ?>
 
-        <form action="" method="GET">
+        <form action="" method="POST">
             <input name="msg">
             <input type="submit">
         </form><br>
