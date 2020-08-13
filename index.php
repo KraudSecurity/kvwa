@@ -55,7 +55,7 @@
 
 <a href='xss/xss17.php?input=1234567890'>XSS 101</a><br>
 
-<h1>XSS Store</h1>
+<h1>XSS Stored</h1>
 
 <a href='xssstored/sxss1.php'>SXSS 1</a> <br>
 <a href='xssstored/sxss1_msg.php'>SXSS 1 MSG</a> <br>
