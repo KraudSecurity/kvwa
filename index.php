@@ -60,7 +60,7 @@
 <a href='xssstored/sxss1.php'>SXSS 1</a> <br>
 <a href='xssstored/sxss1_msg.php'>SXSS 1 MSG</a> <br>
 
-<h1>Auth</h1>
+<h1>AUTH</h1>
 
 <a href='auth/login.php'>Login</a> <br>
 
