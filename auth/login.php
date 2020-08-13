@@ -24,9 +24,8 @@
             $result = $stmt->execute();
 
             $user = $result->fetchArray();
-            var_dump($user[0]);
 
-            if ($stmt->rowCount()) {
+            if ($user[0] > 0) {
                 $_SESSION["authenticated"] = true;
             } else {
                 echo "<h3>Login Failed</h3>";
