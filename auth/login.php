@@ -39,6 +39,7 @@
         } else {
             ?>
         <table align='center'>
+            <tr><td>LOGIN FORM</td></tr>
             <tr><td>
             <form action="" method="POST">
                 <input name="username"><br>
