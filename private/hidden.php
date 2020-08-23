@@ -23,7 +23,7 @@ if (!isset($username)) {
 
         <hr><textarea rows="10" cols="100">guest<script>alert(1)</script></textarea>
         <hr>
-        Следует установить Cookies username
+        Следует установить Cookies user
 
 
 </body>
