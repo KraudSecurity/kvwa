@@ -1,30 +1,19 @@
 <?php
-$username = $_COOKIE['user'];
-if (!isset($username)) {
-    setcookie("user", "guest", time() + 3600);
-}
+
+
 ?>
+
 
 <html>
 <head>
-    <title>Kraud Vulnerable Web Applications | XSS 16</title>
+    <title>Kraud Vulnerable Web Applications</title>
 </head>
 <body>
-<a href="/kvwa/">Home</a><br>
-<h1>XSS 16<h1>
 
-        <?php
-        $username = $_COOKIE['user'];
-        if (isset($username)) {
-            print($username);
-        }
 
-        ?>
+<a href="../index.php">Home</a><br>
 
-        <hr><textarea rows="10" cols="100">guest<script>alert(1)</script></textarea>
-        <hr>
-        Следует установить Cookies username
-
+<a href="hidden.php">Hidden</a><br>
 
 </body>
 </html>
