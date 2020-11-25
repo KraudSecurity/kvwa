@@ -75,6 +75,15 @@
 <a href='xss/xss104.php'>XSS 104</a><br>
 
 
+<h1>Disclosure Information</h1>
+
+<a href='disclosure/info.php'>DI 1 (PhpInfo) </a><br>
+
+<a href='disclosure/path.php'>DI 2 (Listing Paths) </a><br>
+
+<a href='disclosure/listing1.php'>DI 3 (Listing Files) </a><br>
+
+<a href='disclosure/mails.php'>DI 4 (E-mail Address)</a><br>
 
 </body>
 </html>
