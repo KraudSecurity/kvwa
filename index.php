@@ -62,7 +62,10 @@
 
 <h1>AUTH</h1>
 
-<a href='auth/login.php'>Login</a> <br>
+<a href='auth/login.php'>Login 1</a> <br>
+
+<a href='admin/'>Login 2</a> <br>
+
 
 <h1>XSS Invulnerable</h1>
 

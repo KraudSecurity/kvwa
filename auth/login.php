@@ -43,7 +43,7 @@
             <tr><td align="center"><br>
             <form action="" method="POST">
                 <input name="username"><br>
-                <input name="password"><br>
+                <input name="password" type="password"><br>
                 <input type="submit">
             </form>
                 </td></tr>
