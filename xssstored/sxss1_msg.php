@@ -13,15 +13,17 @@
 
     $db = new SQLite3('sxss.db');
     $count = $db->query('SELECT count(*) FROM comments');
+    $c = intval($count->fetchArray()[0]);
+
     if ($page > 0) {
         $offset = $page * 5;
-        $res = $db->query('SELECT * FROM comments LIMIT $offset, 5');
+        $res = $db->query("SELECT * FROM comments LIMIT 5 OFFSET $offset");
     } else {
         $res = $db->query('SELECT * FROM comments LIMIT 5');
     }
 
 
-    $c = intval($count->fetchArray()[0]);
+
 
     print "Total: $c <br>";
 
