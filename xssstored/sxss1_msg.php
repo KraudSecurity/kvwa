@@ -17,7 +17,7 @@
 
     print "Total: $c <br>";
 
-    if ($c[0] > 5) {
+    if ($c > 5) {
         print "Pages: ";
 
         $totalpage = intval($c/5);
