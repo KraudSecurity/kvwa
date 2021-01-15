@@ -11,11 +11,23 @@
 
     $db = new SQLite3('sxss.db');
     $count = $db->query('SELECT count(*) FROM comments');
-    $res = $db->query('SELECT * FROM comments LIMIT 20');
+    $res = $db->query('SELECT * FROM comments LIMIT 5');
 
     $c = $count->fetchArray();
 
     print "Total: $c[0] <br>";
+
+    if ($c[0] > 5) {
+        print "Pages: ";
+
+        $totalpage = int($c[0]/5);
+        for ($i = 1; $i <= $totalpage; $i++) {
+            echo $i;
+            print " <a href='/kvwa/xssstored/sxss1_msg.php?page=$i'>$i</a> | ";
+        }
+
+        print "<br><br>";
+    }
 
     echo "<table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'><tr><td width='10' align='center'>#</td><td align='center'>Message</td></tr>";
     while ($row = $res->fetchArray()) {
