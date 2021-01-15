@@ -13,9 +13,9 @@
     $count = $db->query('SELECT count(*) FROM comments');
     $res = $db->query('SELECT * FROM comments LIMIT 20');
 
-    $c = json_encode($count->fetchArray());
+    $c = json_encode($count->fetchArray())[0];
 
-    print "Total: $c[0] <br>";
+    print "Total: $c <br>";
 
     echo "<table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'><tr><td width='10' align='center'>#</td><td align='center'>Message</td></tr>";
     while ($row = $res->fetchArray()) {
