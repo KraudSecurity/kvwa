@@ -9,9 +9,17 @@
 
 <?php
 
+    $page = intval($_GET['page']);
+
     $db = new SQLite3('sxss.db');
     $count = $db->query('SELECT count(*) FROM comments');
-    $res = $db->query('SELECT * FROM comments LIMIT 5');
+    if ($page > 0) {
+        $offset = $page * 5;
+        $res = $db->query('SELECT * FROM comments LIMIT $offset, 5');
+    } else {
+        $res = $db->query('SELECT * FROM comments LIMIT 5');
+    }
+
 
     $c = intval($count->fetchArray()[0]);
 
@@ -22,7 +30,6 @@
 
         $totalpage = intval($c/5);
         for ($i = 1; $i <= $totalpage; $i++) {
-            echo $i;
             print " <a href='/kvwa/xssstored/sxss1_msg.php?page=$i'>$i</a> | ";
         }
 
