@@ -15,7 +15,7 @@
 
     $c = json_encode($count->fetchArray());
 
-    print "Total: $c <br>";
+    print "Total: $c[0] <br>";
 
     echo "<table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'><tr><td width='10' align='center'>#</td><td align='center'>Message</td></tr>";
     while ($row = $res->fetchArray()) {
