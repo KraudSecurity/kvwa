@@ -13,14 +13,14 @@
     $count = $db->query('SELECT count(*) FROM comments');
     $res = $db->query('SELECT * FROM comments LIMIT 5');
 
-    $c = $count->fetchArray();
+    $c = int($count->fetchArray()[0]);
 
-    print "Total: $c[0] <br>";
+    print "Total: $c <br>";
 
     if ($c[0] > 5) {
         print "Pages: ";
 
-        $totalpage = int($c[0]/5);
+        $totalpage = int($c/5);
         for ($i = 1; $i <= $totalpage; $i++) {
             echo $i;
             print " <a href='/kvwa/xssstored/sxss1_msg.php?page=$i'>$i</a> | ";
