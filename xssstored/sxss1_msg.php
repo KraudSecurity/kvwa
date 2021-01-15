@@ -13,7 +13,7 @@
     $count = $db->query('SELECT count(*) FROM comments');
     $res = $db->query('SELECT * FROM comments LIMIT 20');
 
-    $c = json_encode($count);
+    $c = json_encode($count->fetchArray());
 
     print "Total: $c <br>";
 
