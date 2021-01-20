@@ -71,6 +71,10 @@
 <a href='admin/'>Login 2</a> <br>
 
 
+<h1>SCHEMA</h1>
+
+<a href='schema/js.php'>Schema JS 1</a> <br>
+
 <h1>XSS Invulnerable</h1>
 
 <a href='xss/xss100.php'>XSS 100</a><br>
