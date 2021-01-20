@@ -6,12 +6,13 @@
 <a href="/kvwa/">Home</a><br>
 <h1>Schema JS 1<h1>
 
-        <a href="/kvwa/schema/js.php?from=http://127.0.0.1">TEST</a><br><br>
+        <a href="/kvwa/schema/js.php?from=http://127.0.0.1">TEST 1</a><br><br>
 
-        <a href="/kvwa/schema/js.php?from1=http://127.0.0.1">TEST</a><br><br>
+        <a href="/kvwa/schema/js.php?from1=http://127.0.0.1">TEST 2</a><br><br>
 
+        <a href="/kvwa/schema/js.php?from2=http://127.0.0.1">TEST 3</a><br><br>
 
-
+        <hr>
 
                 <?php
                 $url = $_GET['from'];
