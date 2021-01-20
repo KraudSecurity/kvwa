@@ -48,7 +48,7 @@
                     <INPUT TYPE=submit VALUE=Click>
                 </FORM>
                 <br>
-                <input name=test value="<?php  echo $url;  ?>">
+                <input name=test value="<?php  echo $url3;  ?>">
 
 
                 <hr><textarea rows="10" cols="100">javascript:alert(1)</textarea>
