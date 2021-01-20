@@ -5,6 +5,9 @@
 <body>
 <a href="/kvwa/">Home</a><br>
 <h1>Schema JS 1<h1>
+
+        <a href="/kvwa/schema/js.php?from=http://127.0.0.1">TEST</a><br><br>
+
                 <?php
                 $url = $_GET['from'];
                 if (!preg_match('/^javascript/',$url, $matches)) {
