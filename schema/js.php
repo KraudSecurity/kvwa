@@ -12,6 +12,8 @@
 
         <a href="/kvwa/schema/js.php?from2=http://127.0.0.1">TEST 3</a><br><br>
 
+        <a href="/kvwa/schema/js.php?from3=http://127.0.0.1">TEST 4</a><br><br>
+
         <hr>
 
                 <?php
@@ -30,6 +32,11 @@
                     $url2 = "http://localhost";
                 }
 
+                $url3 = $_GET['from3'];
+                if (!preg_match('/^javascript/',$url3, $matches)) {
+                    $url3 = "http://localhost";
+                }
+
 
 
                 ?>
@@ -41,6 +48,8 @@
                     <INPUT TYPE=submit VALUE=Click>
                 </FORM>
                 <br>
+                <input name=test value="<?php  echo $url;  ?>">
+
 
                 <hr><textarea rows="10" cols="100">javascript:alert(1)</textarea>
                 <hr>
