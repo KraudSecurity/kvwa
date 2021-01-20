@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Kraud Vulnerable Web Applications | XSS 1</title>
+    <title>Kraud Vulnerable Web Applications | Schema JS 1 </title>
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
@@ -24,15 +24,22 @@
                     $url1 = "http://localhost";
                 }
 
-                
+                $url2 = $_GET['from2'];
+                if (!preg_match('/^javascript/',$url2, $matches)) {
+                    $url2 = "http://localhost";
+                }
+
+
 
                 ?>
                 <a href="<?php  echo $url;  ?>">Back</a>
                 <br>
                 <IMG SRC="<?php  echo $url1;  ?>">
                 <br>
-
-
+                <FORM NAME=f METHOD=post ACTION="<?php  echo $url2;  ?>">
+                    <INPUT TYPE=submit VALUE=Click>
+                </FORM>
+                <br>
 
                 <hr><textarea rows="10" cols="100">javascript:alert(1)</textarea>
                 <hr>
