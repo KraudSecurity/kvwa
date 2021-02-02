@@ -53,11 +53,14 @@
 
 <a href='xss/xss15.php'>XSS 15  (FORM POST Filter script tags )</a><br>
 
-<a href='xss/xss17.php?input=1234567890'>XSS 101</a><br>
+<a href='xss/xss17.php?input=1234567890'>XSS 17</a><br>
+
+<a href='xss/xss20.php'>XSS 20</a><br>
 
 <h1>XSS Stored</h1>
 
 <a href='xssstored/sxss1.php'>SXSS 1</a> <br>
+
 <a href='xssstored/sxss1_msg.php'>SXSS 1 MSG</a> <br>
 
 <h1>DOM Based XSS</h1>
@@ -77,13 +80,11 @@
 
 <h1>XSS Invulnerable</h1>
 
-<a href='xss/xss100.php'>XSS 100</a><br>
+<a href='xss/xss23.php'>XSS 23</a><br>
 
-<a href='xss/xss102.php'>XSS 102</a><br>
+<a href='xss/xss24.php'>XSS 24</a><br>
 
-<a href='xss/xss103.php'>XSS 103</a><br>
-
-<a href='xss/xss104.php'>XSS 104</a><br>
+<a href='xss/xss25.php'>XSS 25</a><br>
 
 
 <h1>Disclosure Information</h1>
