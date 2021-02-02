@@ -64,6 +64,11 @@
 
 <a href='xssstored/sxss1_msg.php'>SXSS 1 MSG</a> <br>
 
+<a href='xssstored/sxss2.php'>SXSS 2 (htmlspecialchars)</a> <br>
+
+<a href='xssstored/sxss2_msg.php'>SXSS 2 MSG</a> <br>
+
+
 <h1>DOM Based XSS</h1>
 
 <a href='xssdom/dxss1.php'>DXSS 1</a> <br>
