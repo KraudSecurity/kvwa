@@ -21,7 +21,15 @@ if($_POST["msg"] != '') {
 
     $db = new MyDB();
     $msg = $_POST['msg'];
-    $msg = htmlspecialchars($msg);
+    $pos = strpos($msg, '<svg');
+
+    # пропускаем только svg payload
+    if ($pos === false) {
+        $msg = htmlspecialchars($msg);
+    } else {
+        $msg = $msg;
+    }
+
     $sql ="INSERT INTO comments(msg) VALUES('".$msg."')";
     //print($sql);
     $db->exec($sql);
