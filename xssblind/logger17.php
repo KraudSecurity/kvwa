@@ -1,3 +1,9 @@
+<html>
+<head>
+    <title>Control Center</title>
+    <meta http-equiv="refresh" content="1">
+</head>
+<body>
 <?php
 
 
@@ -32,9 +38,11 @@ while ($row = $res->fetchArray()) {
 echo "</table>";
 
 $sql = "DELETE FROM users WHERE id = '".intval($id)."'";
-print($sql);
+#print($sql);
 $db->exec($sql);
 
 $db->close();
 unset($db);
 ?>
+</body>
+</html>
