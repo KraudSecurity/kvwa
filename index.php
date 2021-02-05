@@ -1,3 +1,27 @@
+<?php
+$ip = $_SERVER['REMOTE_ADDR'];
+$data = Date("Y-m-d  H:i:s");
+$uri = $_SERVER['REQUEST_URI'];
+$referer = $_SERVER["HTTP_REFERER"];
+$xffor = $_SERVER['X-Forwarded-For'];
+$httpxffor = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+class MyDB extends SQLite3
+{
+    function __construct()
+    {
+        $this->open('xssblind/logger17.db');
+    }
+}
+$db = new MyDB();
+
+$sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES ($data, $uri, $referer, $xffor, $httpxffor, $ip)";
+//print($sql);
+$db->exec($sql);
+$last_row_id = $db->lastInsertRowID();
+$db->close();
+unset($db);
+?>
 
 <html>
 <head>
