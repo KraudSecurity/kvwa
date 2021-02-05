@@ -15,7 +15,7 @@ class MyDB extends SQLite3
 }
 $db = new MyDB();
 
-$sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES ($data, $uri, $referer, $xffor, $httpxffor, $ip)";
+$sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES (".$data.",". $uri.",". $referer.",". $xffor.",". $httpxffor.",". $ip.")";
 //print($sql);
 $db->exec($sql);
 $last_row_id = $db->lastInsertRowID();
