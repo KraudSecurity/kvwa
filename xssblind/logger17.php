@@ -4,6 +4,9 @@
     <meta http-equiv="refresh" content="1">
 </head>
 <body>
+<script>
+    window.alert = function() {};
+</script>
 <?php
 
 
