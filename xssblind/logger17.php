@@ -12,13 +12,15 @@ class MyDB extends SQLite3
 }
 $db = new MyDB();
 
-$res = $db->query('SELECT * FROM users LIMIT 5');
+$res = $db->query('SELECT * FROM users LIMIT 1');
 
 echo "<table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'><tr><td width='10' align='center'>#</td><td align='center'>Users</td></tr>";
 while ($row = $res->fetchArray()) {
     echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td><td>".$row[6]."</td></tr>";
 }
 echo "</table>";
+
+$res = $db->query('DELETE FROM users WHERE id = '.$row[0]);
 
 $db->close();
 unset($db);
