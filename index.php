@@ -1,4 +1,6 @@
 <?php
+
+############### XSS Blind Detector ###############
 $ip = $_SERVER['REMOTE_ADDR'];
 $data = Date("Y-m-d  H:i:s");
 $uri = $_SERVER['REQUEST_URI'];
@@ -16,12 +18,14 @@ class MyDB extends SQLite3
 $db = new MyDB();
 
 $sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES ('".$data."','". $uri."','". $referer."','". $xffor."','". $httpxffor."','". $ip."')";
-print($sql);
-print($db->exec($sql));
+#print($sql);
+$db->exec($sql);
 $last_row_id = $db->lastInsertRowID();
-echo "$last_row_id";
+#echo "$last_row_id";
 $db->close();
 unset($db);
+
+##################################################
 ?>
 
 <html>
