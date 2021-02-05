@@ -36,7 +36,7 @@ if($_POST["msg"] != '') {
             <input type="submit">
         </form><br>
 
-
+        <!--  Users can be induced to issue the attacker's crafted request in various ways. For example, the attacker can send a victim a link containing a malicious URL in an email or instant message. They can submit the link to popular web sites that allow content authoring, for example in blog comments. And they can create an innocuous looking web site that causes anyone viewing it to make arbitrary cross-domain requests to the vulnerable application (using either the GET or the POST method). //-->
 
 </body>
 </html>

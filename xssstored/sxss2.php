@@ -45,7 +45,7 @@ if($_POST["msg"] != '') {
             <input type="submit">
         </form><br>
 
-
+        <!-- Reflected cross-site scripting vulnerabilities arise when data is copied from a request and echoed into the application's immediate response in an unsafe way. An attacker can use the vulnerability to construct a request that, if issued by another application user, will cause JavaScript code supplied by the attacker to execute within the user's browser in the context of that user's session with the application. //-->
 
 </body>
 </html>
