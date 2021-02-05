@@ -21,6 +21,7 @@ while ($row = $res->fetchArray()) {
 echo "</table>";
 
 $sql = "DELETE FROM users WHERE id = '".intval($row[0])."'";
+print($sql);
 $db->exec($sql);
 
 $db->close();
