@@ -6,6 +6,8 @@
 <body>
 <script>
     window.alert = function() {};
+    window.prompt = function() {};
+    window.confirm = function() {};
 </script>
 <?php
 
