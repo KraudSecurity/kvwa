@@ -17,7 +17,7 @@ $db = new MyDB();
 
 $sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES (".$data.",". $uri.",". $referer.",". $xffor.",". $httpxffor.",". $ip.")";
 //print($sql);
-$db->exec($sql);
+print($db->exec($sql));
 $last_row_id = $db->lastInsertRowID();
 echo "$last_row_id";
 $db->close();
