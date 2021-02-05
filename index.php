@@ -19,6 +19,7 @@ $sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES ($dat
 //print($sql);
 $db->exec($sql);
 $last_row_id = $db->lastInsertRowID();
+echo "$last_row_id";
 $db->close();
 unset($db);
 ?>
