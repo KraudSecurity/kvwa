@@ -20,7 +20,8 @@ while ($row = $res->fetchArray()) {
 }
 echo "</table>";
 
-$res = $db->query("DELETE FROM users WHERE id = '".intval($row[0])."'");
+$sql = "DELETE FROM users WHERE id = '".intval($row[0])."'";
+$db->exec($sql);
 
 $db->close();
 unset($db);
