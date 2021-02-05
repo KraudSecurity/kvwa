@@ -14,7 +14,17 @@ $db = new MyDB();
 
 $res = $db->query('SELECT * FROM users LIMIT 1');
 
-echo "<table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'><tr><td width='10' align='center'>#</td><td align='center'>Users</td></tr>";
+echo "<table align='center' width='70%' border='1' cellspacing='1' cellpadding='10'>
+<tr>
+<td width='10' align='center'>#</td>
+<td align='center'>data</td>
+<td align='center'>uri</td>
+<td align='center'>referer</td>
+<td align='center'>xffor</td>
+<td align='center'>httpxffor</td>
+<td align='center'>ip</td>
+<td align='center'>ua</td>
+</tr>";
 while ($row = $res->fetchArray()) {
     $id = $row[0];
     echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td><td>".$row[6]."</td></tr>";

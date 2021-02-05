@@ -7,6 +7,8 @@ $uri = $_SERVER['REQUEST_URI'];
 $referer = $_SERVER["HTTP_REFERER"];
 $xffor = $_SERVER['X-Forwarded-For'];
 $httpxffor = $_SERVER['HTTP_X_FORWARDED_FOR'];
+$ua = $_SERVER['HTTP_USER_AGENT'];
+
 
 class MyDB extends SQLite3
 {
@@ -17,7 +19,7 @@ class MyDB extends SQLite3
 }
 $db = new MyDB();
 
-$sql ="insert into users (data, uri, referer, xffor, httpxffor, ip) VALUES ('".$data."','". $uri."','". $referer."','". $xffor."','". $httpxffor."','". $ip."')";
+$sql ="insert into users (data, uri, referer, xffor, httpxffor, ip, ua) VALUES ('".$data."','". $uri."','". $referer."','". $xffor."','". $httpxffor."','". $ip."', '".$ua."')";
 #print($sql);
 $db->exec($sql);
 $last_row_id = $db->lastInsertRowID();
