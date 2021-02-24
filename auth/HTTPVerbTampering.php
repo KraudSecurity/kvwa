@@ -4,13 +4,13 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
     case 'PUT':
-        http_response_code(403);
+        header('HTTP/1.1 401 Unauthorized');
         break;
     case 'POST':
-        http_response_code(403);
+        header('HTTP/1.1 401 Unauthorized');
         break;
     case 'GET':
-        http_response_code(403);
+        header('HTTP/1.1 401 Unauthorized');
         break;
     default:
         echo "<h1>ADMIN LOGIN!!!!!</h1>";
