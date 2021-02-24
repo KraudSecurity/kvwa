@@ -110,6 +110,8 @@ unset($db);
 
 <a href='admin/'>Login 2</a> <br>
 
+<a href='auth/HTTPVerbTampering.php'>HTTP Verb Tampering</a> <br>
+
 
 <h1>SCHEMA</h1>
 
