@@ -10,12 +10,15 @@
         <?php
         $file = rawurldecode($_REQUEST['file']);
         $file = preg_replace('/^.+[\\\\\\/]/', $file);
-        include("./1/{$file}");
+        include("1/{$file}");
         ?>
 
         <a href="index.php?file=1.php">1.php</a>
 
-        <hr><textarea rows="10" cols="100"><script>alert(1)</script></textarea>
+        <hr><textarea rows="10" cols="100">
+
+
+        </textarea>
 
 </body>
 </html>
