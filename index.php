@@ -136,5 +136,11 @@ unset($db);
 
 <a href='disclosure/mails.php'>DI 4 (E-mail Address)</a><br>
 
+
+<h1>LFI</h1>
+
+<a href='lfi/'>LFI</a><br>
+
+
 </body>
 </html>

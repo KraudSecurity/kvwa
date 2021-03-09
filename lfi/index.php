@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>Kraud Vulnerable Web Applications | LFI 1</title>
+    <title>Kraud Vulnerable Web Applications | LFI</title>
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
@@ -14,13 +14,11 @@
         print($url);
         include($url);
 
-
         ?>
 
-        <a href="index.php?file=1.php">1.php</a>
+        <a href="index.php?file=lfi1.php">LFI 1</a>
 
         <hr><textarea rows="10" cols="100">
-
 
         </textarea>
 
