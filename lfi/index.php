@@ -9,7 +9,7 @@
 
         <?php
         $file = rawurldecode($_REQUEST['file']);
-        $file = preg_replace('/^.+[\\\\\\/]/', $file);
+        #$file = preg_replace('/^.+[\\\\\\/]/', $file);
         $url = "./1/$file";
         print($url);
         include($url);
