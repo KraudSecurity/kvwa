@@ -5,18 +5,20 @@
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
-<h1>LFI 1<h1>
+<h1>LFI<h1>
+
+        <a href="index.php?file=lfi1.php">LFI 1</a>
+
+        <hr>
 
         <?php
+        #### LFI 1 ####
         $file = rawurldecode($_REQUEST['file']);
         #$file = preg_replace('/^.+[\\\\\\/]/', $file);
         $url = "./1/$file";
-        print($url);
         include($url);
 
         ?>
-
-        <a href="index.php?file=lfi1.php">LFI 1</a>
 
         <hr><textarea rows="10" cols="100">
 
