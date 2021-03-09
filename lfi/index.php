@@ -10,7 +10,7 @@
         <?php
         $file = rawurldecode($_REQUEST['file']);
         $file = preg_replace('/^.+[\\\\\\/]/', $file);
-        include("1/{$file}");
+        include("./1/{$file}");
         ?>
 
         <a href="index.php?file=1.php">1.php</a>
