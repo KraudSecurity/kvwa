@@ -7,7 +7,8 @@
 <a href="/kvwa/">Home</a><br>
 <h1>LFI<h1>
 
-        <a href="index.php?file=lfi1.php">LFI 1</a>
+        <a href="index.php?file=lfi1.php">LFI 1</a><br>
+        <a href="index.php?content=lfi2">LFI 2</a><br>
 
         <hr>
 
@@ -17,12 +18,17 @@
         #$file = preg_replace('/^.+[\\\\\\/]/', $file);
         $url = "./1/$file";
         include($url);
+        ?>
 
+        <?php
+        if (isset($_GET['content'])) {
+            include "./1/".$_GET['content'].".php";
+        }
         ?>
 
         <hr><textarea rows="10" cols="100">
-        LFI 1 - ?file=../../../../../../../etc/passwd
-
+            LFI 1 - ?file=../../../../../../../etc/passwd
+            LFI2 - ?
         </textarea>
 
 </body>
