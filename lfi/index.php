@@ -22,6 +22,7 @@
 
         <?php
         if (isset($_GET['content'])) {
+            print($_GET['content']);
             include "./1/".$_GET['content'].".php";
         }
         ?>
