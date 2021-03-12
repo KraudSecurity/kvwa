@@ -31,6 +31,7 @@
         ?>
 
         <hr><textarea rows="10" cols="100"></textarea>
+        filename уязвимый параметр
         <hr>
         <br>
 
