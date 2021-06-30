@@ -1,14 +1,14 @@
 <?php $start = microtime(true); ?>
 <html>
 <head>
-<title>Kraud Vulnerable Web Applications | XSS 1</title>
+<title>Kraud Vulnerable Web Applications | SQLi MySQL 1 FP</title>
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
-<h1>SQLi MySQL 1<h1>
+<h1>SQLi MySQL 1 FP<h1>
 
         <form action="" method="POST">
-            <input name="search" value='<?php echo $_POST['search']; ?>'>
+            <input name="search" value=''>
             <input type="submit">
         </form>
         <br>

@@ -142,5 +142,12 @@ unset($db);
 <a href='lfi/'>LFI</a><br>
 
 
+<h1>SQLi</h1>
+
+<a href='sqli/mysql/sqli_mysql1.php'>SQLi MySQL 1</a><br>
+
+<a href='sqli/mysql/sqli_mysql1_fp.php'>SQLi MySQL 1 FP</a><br>
+
+
 </body>
 </html>

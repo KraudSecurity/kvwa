@@ -1,7 +1,7 @@
 <?php $start = microtime(true); ?>
 <html>
 <head>
-<title>Kraud Vulnerable Web Applications | XSS 1</title>
+<title>Kraud Vulnerable Web Applications | SQLi MySQL 1 </title>
 </head>
 <body>
 <a href="/kvwa/">Home</a><br>
