@@ -38,11 +38,7 @@
         ?>
 
         <hr>
-        <plaintext>
 
-            </textarea><script>alert(1)</script>
-
-        </plaintext>
         <?php $finish = microtime(true); $delta=$finish-$start;
         echo "Time:" . $delta;
         ?>
