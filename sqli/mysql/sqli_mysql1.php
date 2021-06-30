@@ -1,3 +1,4 @@
+<?php $start = microtime(true); ?>
 <html>
 <head>
 <title>Kraud Vulnerable Web Applications | XSS 1</title>
@@ -42,6 +43,8 @@
             </textarea><script>alert(1)</script>
 
         </plaintext>
-
+        <?php $finish = microtime(true); $delta=$finish-$start;
+        echo "Time:" . $finish;
+        ?>
 </body>
 </html>
