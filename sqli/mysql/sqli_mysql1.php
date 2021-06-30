@@ -18,7 +18,7 @@
             $pass = 'kvwa';
             $search = $_POST['search'];
             $dbh = new PDO('mysql:host=localhost;dbname=kvwa', $user, $pass);
-            foreach($dbh->query('SELECT * from users WHERE `name` = ' . $search) as $row) {
+            foreach($dbh->query('SELECT * from users') as $row) {
                 print_r($row);
             }
             $dbh = null;
