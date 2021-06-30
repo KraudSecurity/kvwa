@@ -19,12 +19,14 @@
             $search = $_POST['search'];
             $dbh = new PDO('mysql:host=localhost;dbname=kvwa', $user, $pass);
             if ($search) {
-                foreach($dbh->query("SELECT * from users where `name` like %" . $search . "%") as $row) {
+                foreach($dbh->query("SELECT * from users where `name` like '%" . $search . "%'") as $row) {
                     print_r($row);
+                    echo "2";
                 }
             } else {
                 foreach($dbh->query('SELECT * from users') as $row) {
                     print_r($row);
+                    echo "1";
                 }
             }
 
