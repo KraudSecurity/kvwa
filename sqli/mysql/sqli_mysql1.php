@@ -44,7 +44,7 @@
 
         </plaintext>
         <?php $finish = microtime(true); $delta=$finish-$start;
-        echo "Time:" . $finish;
+        echo "Time:" . $delta;
         ?>
 </body>
 </html>
