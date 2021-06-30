@@ -18,9 +18,16 @@
             $pass = 'kvwa';
             $search = $_POST['search'];
             $dbh = new PDO('mysql:host=localhost;dbname=kvwa', $user, $pass);
-            foreach($dbh->query('SELECT * from users') as $row) {
-                print_r($row);
+            if ($search) {
+                foreach($dbh->query("SELECT * from users where name = $search") as $row) {
+                    print_r($row);
+                }
+            } else {
+                foreach($dbh->query('SELECT * from users') as $row) {
+                    print_r($row);
+                }
             }
+
             $dbh = null;
         } catch (PDOException $e) {
             print "Error!: " . $e->getMessage() . "<br/>";
