@@ -14,11 +14,11 @@
 
         <?php
         try {
-            $user = 'test';
-            $pass = 'test';
+            $user = 'kvwa';
+            $pass = 'kvwa';
             $search = $_POST['search'];
-            $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
-            foreach($dbh->query('SELECT * from test WHERE `name` = ' . $search) as $row) {
+            $dbh = new PDO('mysql:host=localhost;dbname=kvwa', $user, $pass);
+            foreach($dbh->query('SELECT * from users WHERE `name` = ' . $search) as $row) {
                 print_r($row);
             }
             $dbh = null;
