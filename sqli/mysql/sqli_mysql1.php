@@ -7,7 +7,7 @@
 <h1>SQLi MySQL 1<h1>
 
         <form action="" method="POST">
-            <input name="search" value=''>
+            <input name="search" value='<?php echo $_POST['search']; ?>'>
             <input type="submit">
         </form>
         <br>
